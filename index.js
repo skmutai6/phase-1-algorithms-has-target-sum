@@ -1,5 +1,11 @@
 function hasTargetSum(array, target) {
   // Write your algorithm here
+  for(let i = 0; i < array.length; i++) {
+    if(i + i === target) {
+      return true;
+    } else
+      return false;
+  }
 }
 
 /* 
@@ -8,10 +14,18 @@ function hasTargetSum(array, target) {
 
 /* 
   Add your pseudocode here
+  if any pair of numbers add up to the target
+    returns true 
+  else 
+    return false
 */
 
 /*
   Add written explanation of your solution here
+  I need to make a hasTargetSum function that returns either true or false,
+  when any pair of numbers in the array of intergers add up to the target,
+  it should return true. That is if my array has5 intergers and 2 of them
+  when added is equal to the target, it should return true
 */
 
 // You can run `node index.js` to view these console logs
